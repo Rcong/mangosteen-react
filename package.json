@@ -16,16 +16,17 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-router-dom": "6.4.2",
-    "sass": "1.55.0"
+    "sass": "1.55.0",
+    "zustand": "4.3.5"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "0.27.0",
     "@types/react": "18.0.24",
     "@types/react-dom": "18.0.8",
     "@vitejs/plugin-react": "2.2.0",
-    "typescript": "4.8.4",
-    "vite": "3.2.3",
-    "@antfu/eslint-config": "0.27.0",
     "eslint": "8.25.0",
-    "unocss": "0.45.30"
+    "typescript": "4.8.4",
+    "unocss": "0.45.30",
+    "vite": "3.2.3"
   }
 }
