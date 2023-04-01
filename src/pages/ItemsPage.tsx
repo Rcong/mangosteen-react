@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 import { AddItemFloatButton } from '../components/AddItemFloatButton'
 import { Gradient } from '../components/Gradient'
+import { Icon } from '../components/Icon'
 import type { TimeRange } from '../components/TimeRangePicker'
 import { TimeRangePicker } from '../components/TimeRangePicker'
 import { TopMenu } from '../components/TopMenu'
@@ -17,7 +18,10 @@ export const ItemsPage: React.FC = () => {
   return (
     <div>
       <Gradient>
-        <TopNav />
+        <TopNav title="账目列表" icon={
+          <Icon name="menu" className="w-24px h-24px"
+            onClick={() => { setVisible(!visible) }} />
+        } />
         <TimeRangePicker selected={timeRange} onSelected={setTimeRange} />
       </Gradient>
       <ItemsSummary />
